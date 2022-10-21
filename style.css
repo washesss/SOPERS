@@ -16,31 +16,35 @@ body{
 .containerimg{
   display: flex;
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   background-color: blue;
   filter: drop-shadow(0 0.2vh 1vh #002453);
 
 }
 
 .containerimg h1{
+  position: relative;
   color:white;
   margin-top: 5vw;
   margin-left: 5vw;
   font-family: 'Poppins', sans-serif;
+  left: 58%;
 }
 
 .containerimg p{
+  position: relative;
   margin-top: 2vw;
   margin-left: 5vw;
   font-family: 'Poppins', sans-serif;
   color: white;
+  left: 55%;
 }
 
 .b{
   display: flex;
   position: relative;
-  top: 50vh;
-  left: -40%;
+  top: 40vh;
+  left: -17%;
 }
 
 .btn-new{
@@ -71,7 +75,7 @@ body {
 }
 .container2 {
     width: 100vw;
-    height: 80vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,9 +108,9 @@ body {
   }
 }
 
-@media only screen and (min-height: 600px ) and (max-height: 1440px) {
+@media only screen and (min-height: 900px ) {
   .container2 {
-    height: 75vh;
+    height: 40vh;
   }
 }
 
