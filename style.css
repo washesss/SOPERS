@@ -2,49 +2,181 @@ body{
     background: #007bff;
     background: linear-gradient(to right, #0062E6, #33AEFF);
 }
+
+.btn-new{border-radius: 12px;}
+
+.planos{
+  display: flex;
+  margin-top: 5vh;
+  justify-content: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.containerimg{
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  background-color: blue;
+  filter: drop-shadow(0 0.2vh 1vh #002453);
+
+}
+
+.containerimg h1{
+  color:white;
+  margin-top: 5vw;
+  margin-left: 5vw;
+  font-family: 'Poppins', sans-serif;
+}
+
+.containerimg p{
+  margin-top: 2vw;
+  margin-left: 5vw;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.b{
+  display: flex;
+  position: relative;
+  top: 50vh;
+  left: -40%;
+}
+
+.btn-new{
+  background: #0062E6;
+  width: clamp(17vw, 20vw, 20vw);
+  height:10vh;
+  margin-right: 15px;
+  color: white;
+  border: none;
+  font-size: clamp(1vw, 1em, 1em);;
+}
+
+.btn-new:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btn-new {
+  transition-duration: 0.4s;
+}
+
+.btn-new:hover {
+  background-color: #007bff; /* Green */
+  color: white;
+}
+
 body {
-    margin: 0px
+    margin: 0px;
 }
 .container2 {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box1 h3 , p{
+  margin-right: 1vw;
+  margin-left: 1vw;
+  font-family: 'Poppins', sans-serif;
+}
+
+.box1 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: clamp(10vw, 80vw, 100%);
+    height: clamp(60vh, 50vh);;
+    background-color: white;
+    border-radius: 5px;
+    filter: drop-shadow(0 0.2vh 1vh grey);
+    z-index: 1;
+    justify-items: center;
+    justify-self: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .box1 {
+    width: 100%;
+    height: 80vh;
+  }
+}
+
+@media only screen and (min-height: 600px ) and (max-height: 1440px) {
+  .container2 {
+    height: 75vh;
+  }
+}
+
+.box1 p{
+  display: flex;
+  flex-wrap:nowrap;
+
+}
+
+.container2 h1{
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+    display:flex;
     justify-content: center;
-    align-items: center
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 .box2 {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    border-radius: 5px;
-    filter: drop-shadow(50px);
-    z-index: 2;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: clamp(10vw, 80vw, 100%);
+  height: clamp(60vh, 50vh);;
+  background-color: white;
+  border-radius: 5px;
+  filter: drop-shadow(0 0.2vh 1vh grey);
+  z-index: 1;
+  justify-items: center;
 }
 
-.box {
+@media only screen and (max-width: 400px) {
+.box2 {
+  width: 100%;
+  height: 80vh;
+}
+}
+
+.box2 h3 , p{
+  margin-right: 1vw;
+  margin-left: 1vw;
+  font-family: 'Poppins', sans-serif;
+}
+.container3 {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*.box {
     display: flex;
     width: 60%;
     height: 500px;
     border-radius: 5px;
     filter: drop-shadow(50px);
     z-index: 1;
-}
-.container2 img{
-    justify-content: center;
-}
-p{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+}*/
+.box2 p{
+  display: flex;
+  flex-wrap:nowrap;
+
 }
 
-h1{
+.container3 h1{
+  margin-top: 5vh;
+  margin-bottom: 2vh;
     display:flex;
     justify-content: center;
-    top:10%;
     color: white;
     font-family: 'Poppins', sans-serif;
 }
